@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"cdk_deploy_lambda","Source":"vladcar/serverless-common-basic-lambda/aws","Version":"1.2.2","Dir":".terraform/modules/cdk_deploy_lambda"}]}
