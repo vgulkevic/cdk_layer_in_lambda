@@ -1,0 +1,5 @@
+rootProject.name = 'cdk_layer_in_lambda'
+
+include "cdk-lambda-layer"
+include "cdk-deployer"
+include "cdk-deployer:lambda"

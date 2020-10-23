@@ -1,0 +1,18 @@
+subprojects {
+    task packageLambda(type: Exec) {
+        doFirst {
+            println "packaging $project.name.."
+        }
+        commandLine "bash", "./pack.sh"
+    }
+}
+
+task deploy(type: Exec, dependsOn: subprojects.tasks['packageLambda']) {
+    def env = project.hasProperty('env')
+            ? project.getProperty('env') : 'prod'
+
+    doFirst {
+        println "deploying to ${env}.."
+    }
+    commandLine "bash", "../terraform-utils/deploy.sh", "-e", "$env"
+}

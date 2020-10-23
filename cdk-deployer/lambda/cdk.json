@@ -1,0 +1,5 @@
+{
+  "app": "node cdkStackbundle.js",
+  "output": "/tmp/cdk.out",
+  "requireApproval": "never"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "cdk-lambda-layer",
+  "version": "1.0.0",
+  "description": "Shared code",
+  "private": true,
+  "author": "vgulkevic",
+  "dependencies": {
+    "aws-cdk": "1.67.0"
+  }
+}

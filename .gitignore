@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/cdk-deployer/lambda/node_modules/
+/cdk-lambda-layer/node_modules/

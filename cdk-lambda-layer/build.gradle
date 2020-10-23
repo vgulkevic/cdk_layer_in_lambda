@@ -1,0 +1,7 @@
+task packageLayer(type: Exec) {
+    doFirst {
+        println "packaging $project.name.."
+    }
+    commandLine "bash", "./pack.sh"
+}
+
