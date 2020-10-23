@@ -17,9 +17,9 @@ If you want to run this example you need to
 
 1. You might need to run cdk bootstrap "cdk bootstrap --profile <profile_if_you_use> aws://<accountId>/<AWS_REGION>" in the acc/region when running CDK for the first time in this AWS account
 
-2. Setup remote state for terraform 
+2. Setup remote state for terraform:
 
-3. In `cdk-deployer/terraform/remote-state` set your provider settings and run
+In `cdk-deployer/terraform/remote-state` set your provider settings and run
 ```
 terraform init
 terraform apply
@@ -43,4 +43,7 @@ Or use Gradle in Intellij
 }
 ```
 
-
+## Content
+`/cdk-lambda-layer` - install CDK, prepare zip
+`/cdk-deployer/lambda` - Stack definition, Lambda code
+`/cdk-deployer/terraform` - terraform to deployer Lambda together with CDK in layer
